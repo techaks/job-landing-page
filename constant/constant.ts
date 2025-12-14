@@ -7,26 +7,22 @@ export const NavLinks = [
   {
     id: 2,
     url: "#",
-    label: "Find Job",
+    label: "Contact",
   },
   {
     id: 3,
     url: "#",
-    label: "Candidates",
+    label: "Employers",
   },
   {
     id: 4,
     url: "#",
-    label: "Employers",
+    label: "Candidates",
   },
+ 
   {
     id: 5,
     url: "#",
-    label: "Blog",
-  },
-  {
-    id: 6,
-    url: "#",
-    label: "Contact",
+    label: "Find Job",
   },
 ];
