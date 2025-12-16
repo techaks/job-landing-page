@@ -2,17 +2,17 @@ import { NavLinks } from '@/constant/constant'
 import Link from 'next/link'
 import React from 'react'
 import { CgCloseO } from "react-icons/cg";
-type Props ={
-    showNav:boolean;
-    closeNav:()=>void;
+type Props = {
+    showNav: boolean;
+    closeNav: () => void;
 }
 
-const MobileNav = ({showNav,closeNav}:Props) => {
-    const show = showNav ? "translate-x-0 " : "translate-x-[100%] " ; 
- 
+const MobileNav = ({ showNav, closeNav }: Props) => {
+    const show = showNav ? "translate-x-0 " : "translate-x-[100%] ";
+
     return (
         <div>
-            {/* overlay bg */}
+
             <div className={`bg-black z-[200] h-screen w-full fixed inset-0 transform transition-all duration-300 opacity-65 ${show} `}>
             </div>
             {/* navlinks */}
@@ -24,11 +24,11 @@ const MobileNav = ({showNav,closeNav}:Props) => {
                         </Link>
                     ))
                 }
-                <CgCloseO  onClick={closeNav} className=" text-black  absolute top-3 right-5 sm:w-8 sm:h-8 w-8 h-8 cursor-pointer " />
-                
+                <CgCloseO onClick={closeNav} className=" text-black  absolute top-3 right-5 sm:w-8 sm:h-8 w-8 h-8 cursor-pointer " />
+
 
             </div>
-            
+
 
         </div>
     )
