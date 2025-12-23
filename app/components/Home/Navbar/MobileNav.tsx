@@ -16,7 +16,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
             <div className={`bg-black z-[200] h-screen w-full fixed inset-0 transform transition-all duration-300 opacity-65 ${show} `}>
             </div>
             {/* navlinks */}
-            <div className={` ${show} text-white fixed right-0 transform transition-all duration-300 z-[200] flex flex-col justify-center delay-300 w-[80%] sm:w-[60%]   bg-sky-500  space-y-6 right-0 h-screen `}>
+            <div className={` ${show} text-white fixed transform transition-all duration-300 z-[200] flex flex-col justify-center delay-300 w-[80%] sm:w-[60%]  bg-sky-500  space-y-6 right-0 h-screen `}>
                 {
                     NavLinks.map((item) => (
                         <Link href={item.url} key={item.id} >
@@ -28,7 +28,6 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
 
 
             </div>
-
 
         </div>
     )
